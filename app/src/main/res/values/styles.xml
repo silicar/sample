@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseThem" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 窗口背景色 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 工具栏颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 选中颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Button 正常色 -->
+        <!--<item name="colorButtonNormal">@color/colorNormal</item>-->
+        <!-- 控件正常色 -->
+        <!--<item name="colorControlNormal">@color/colorNormal</item>-->
+        <!-- 控件活跃色 -->
+        <!--<item name="colorControlActivated">@color/colorNormal</item>-->
+        <!-- 控件高亮色 -->
+        <!--<item name="colorControlHighlight">@color/colorAccent</item>-->
+    </style>
+
+    <style name="AppTheme" parent="BaseThem"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

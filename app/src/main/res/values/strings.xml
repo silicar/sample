@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="title_activity_material_text_input">MaterialTextInputActivity</string>
+</resources>
