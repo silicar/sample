@@ -10,6 +10,7 @@ import android.view.View;
 import silicar.library.adapter.AdapterListener;
 import silicar.sample.databinding.ActivitySampleListBinding;
 import silicar.sample.material.MaterialTextInputActivity;
+import silicar.sample.net.okhttp.OkHttpActivity;
 import silicar.sample.special.multistage_list.MultistageListActivity;
 
 import java.util.ArrayList;
@@ -45,23 +46,28 @@ public class SampleListActivity extends AppCompatActivity {
         test();
     }
 
+    // 特殊控件
     private void special() {
         List<DataVo> voList = new ArrayList<>();
         dataVoList.add(new DataVo("特殊控件", voList));
         voList.add(new DataVo("多级列表", new Intent(this, MultistageListActivity.class)));
     }
 
+    // 网络请求
     private void network() {
         List<DataVo> voList = new ArrayList<>();
         dataVoList.add(new DataVo("网络请求", voList));
+        voList.add(new DataVo("OkHttp + Gson", new Intent(this, OkHttpActivity.class)));
     }
 
+    // Material Design
     private void material() {
         List<DataVo> voList = new ArrayList<>();
         dataVoList.add(new DataVo("Material Design", voList));
         voList.add(new DataVo("TextInput", new Intent(this, MaterialTextInputActivity.class)));
     }
 
+    // 临时测试
     private void test() {
         List<DataVo> voList = new ArrayList<>();
         dataVoList.add(new DataVo("测试", voList));
